@@ -19,18 +19,64 @@
     <!-- Tailwind CSS cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
-          }
-        }
-      </script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body>
-    
+    <!-- Main Content Start -->
+    <main class="max-w-screen-2 mx-auto px-16 lg:px-28">
+      <!-- Header Section -->
+      <header class="flex pt-10 mb-20">
+        <!-- Text Content -->
+        <div class="space-y-5">
+          <h1 class="text-5xl mb:text-7xl font-semibold">
+            It's good <br />
+            tea time at The <br />
+            Tea House
+          </h1>
+          <p class="text-gray-500 w-8/12 text-lg">
+            Tea and Botanical Solutions Supplier Give Optimum Satisfaction To
+            Your Taste Buds.
+          </p>
+          <button
+            class="text-xl font-semibold text-white bg-gradient-to-r from-orange-500 to-red-500 px-3 py-3 rounded-lg"
+          >
+            Explore More <i class="fa-solid fa-arrow-right-long -rotate-45"></i>
+          </button>
+        </div>
+
+        <!-- Image Content -->
+        <div class="relative">
+          <!-- Image -->
+          <div>
+            <img class="w-full" src="./images/banner.png" alt="" />
+          </div>
+          <!-- Card -->
+          <div
+            class="absolute flex items-center bg-white rounded-lg 
+            shadow-lg px-2 py-2 md:px-10 lg:py-4 gap-3 top-28 md:top-96
+            md:left-32 lg:left-24">
+            <!-- Icon -->
+            <div>
+              <i class="fa-solid fa-star text-2xl text-amber-500"></i>
+            </div>
+            <!-- Text -->
+            <div>
+              <h2 class="lg:text-2xl font-bold">5.00</h2>
+              <p class="text-gray-500">Trust Pilot Ratings</p>
+            </div>
+          </div>
+        </div>
+      </header>
+    </main>
+    <!-- Main Content End -->
   </body>
 </html>
